@@ -18,11 +18,7 @@ export default new Router({
       component: () =>
         import(
           /* webpackChunkName: "products" */ './views/products/products.vue'
-<<<<<<< HEAD
-          ),
-=======
         ),
->>>>>>> 060d5f8990af72f5134c59fce9c2ecce88be5aa3
     },
     {
       path: '/about',
