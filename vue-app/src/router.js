@@ -9,15 +9,15 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/index.html',
-      redirect: '/',
+      path: '/',
+      redirect: '/products',
     },
     {
       path: '/products',
       name: 'products',
       component: () =>
         import(
-          /* webpackChunkName: "products" */ './views/products/products.vue'
+           webpackChunkName, "products" /* './views/products/products.vue' */
         ),
     },
     {
