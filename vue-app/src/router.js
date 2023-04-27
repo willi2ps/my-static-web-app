@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/index.html',
-      redirect: '/products',
+      redirect: '/',
     },
     {
       path: '/products',
