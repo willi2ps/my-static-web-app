@@ -10,15 +10,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: 'products',
+      redirect: '/products',
     },
     {
       path: '/products',
       name: 'products',
       component: () =>
-        import(
-           /*webpackChunkName: "products" */ './views/products/products.vue'
-                   ),
+        import(/* webpackChunkName: "products" */ './views/products/products.vue'),
     },
     {
       path: '/about',
